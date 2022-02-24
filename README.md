@@ -29,11 +29,14 @@ Mysql 5.7 or superior;
 * - Execute php artisan migrate:fresh from command prompt in order to create all your database;
 
 
-After all configurations, go to the command prompt on project folder and run the command 
-to start the server:
-php artisan serve
+* - After all configurations, go to the command prompt on project folder and run the command 
+    to start the server:
+    php artisan serve
+
+* - Check if your mysql server is running and up;
 
 
+--------------------------------------------------------------------------------
 To run the crawler job, execute the following command:
 php artisan schedule:work
 
@@ -51,3 +54,4 @@ http://127.0.0.1:8000/api/urlshortener/top100
 For testing url shortener, run the command from url browser:
 http://localhost:8000/YOUR_SHORT_CODE
 
+--------------------------------------------------------------------------------

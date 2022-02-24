@@ -31,7 +31,7 @@ class UrlShorteners extends Model
     foreach($temp as $key=>$values)
     {
       $urlPai = $values['long_url'];
-      $client = new \GuzzleHttp\Client(['verify' => 'C:/blablabla/bluecoding/backend/cacert.pem']);
+      $client = new \GuzzleHttp\Client(['verify' => 'C:/blablabla/bluecoding/cacert.pem']);
       $response = $client->get($urlPai);
       $html = $response->getBody()->getContents();
       $crawler = new \Symfony\Component\DomCrawler\Crawler($html);
